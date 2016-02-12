@@ -108,7 +108,7 @@ class MultiSwitchArg : public SwitchArg
 		/**
 		 * Returns int, the number of times the switch has been set.
 		 */
-		int getValue() const { return _value; }
+		int getValue();
 
 		/**
 		 * Returns the shortID for this Arg.
@@ -149,6 +149,8 @@ _default( init )
 { 
 	parser.add( this );
 }
+
+inline int MultiSwitchArg::getValue() { return _value; }
 
 inline bool MultiSwitchArg::processArg(int *i, std::vector<std::string>& args)
 {

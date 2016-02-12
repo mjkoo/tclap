@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # success
-../examples/test9 > tmp.out 2>&1
+../build/examples/test9 > tmp.out 2>&1
 
 if cmp -s tmp.out $srcdir/test58.out; then
 	exit 0

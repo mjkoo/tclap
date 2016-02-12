@@ -1,7 +1,7 @@
 
 USAGE: 
 
-   ../examples/test1  [-r] -n <string> [--] [--version] [-h]
+   ../build/examples/test1  [-r] -n <string> [--] [--version] [-h]
 
 
 Where: 

@@ -5,7 +5,7 @@
 # handling doesn't get fooled if the delimiter
 # is in the string
 # success  
-../examples/test13 > tmp.out 2>&1
+../build/examples/test13 > tmp.out 2>&1
 
 if cmp -s tmp.out $srcdir/test68.out; then
 	exit 0

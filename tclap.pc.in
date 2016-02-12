@@ -3,5 +3,5 @@ includedir=@includedir@
 
 Name: tclap
 Description: Templatized C++ Command Line Parser
-Version: @VERSION@
+Version: @PROJECT_VERSION@
 Cflags: -I${includedir}
