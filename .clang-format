@@ -1,0 +1,12 @@
+---
+Language: Cpp
+Standard: C++11
+BasedOnStyle: Webkit
+AllowShortFunctionsOnASingleLine: Inline
+AlwaysBreakTemplateDeclarations: true
+BreakBeforeTernaryOperators: false
+ColumnLimit: 120
+ConstructorInitializerIndentWidth: 2
+NamespaceIndentation: None
+...
+

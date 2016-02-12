@@ -37,16 +37,14 @@ namespace TCLAP {
  */
 struct ValueLike {
     typedef ValueLike ValueCategory;
-	virtual ~ValueLike() {}
 };
 
 /**
  * A string like argument value type is a value that can be set using
- * operator=(string). Usefull if the value type contains spaces which
+ * operator=(string). Useful if the value type contains spaces which
  * will be broken up into individual tokens by operator>>.
  */
 struct StringLike {
-	virtual ~StringLike() {}
 };
 
 /**
@@ -56,7 +54,6 @@ struct StringLike {
  */
 struct StringLikeTrait {
     typedef StringLike ValueCategory;
-	virtual ~StringLikeTrait() {}
 };
 
 /**
@@ -66,7 +63,6 @@ struct StringLikeTrait {
  */
 struct ValueLikeTrait {
     typedef ValueLike ValueCategory;
-	virtual ~ValueLikeTrait() {}
 };
 
 /**
@@ -75,11 +71,10 @@ struct ValueLikeTrait {
  * values gets assigned to any particular type during parsing. The two
  * supported types are StringLike and ValueLike.
  */
-template<typename T>
+template <typename T>
 struct ArgTraits {
     typedef typename T::ValueCategory ValueCategory;
-	virtual ~ArgTraits() {}
-    //typedef ValueLike ValueCategory;
+    // typedef ValueLike ValueCategory;
 };
 
 #endif
